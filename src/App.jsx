@@ -1,3 +1,4 @@
+import { Cart } from "./components/Cart.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Header } from "./components/Header";
 import { Products } from "./components/Products";
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Header />
+      <Cart />
       <Products products={filteredProducts} />
       {IS_DEVELOPMENT && <Footer />}
     </>
