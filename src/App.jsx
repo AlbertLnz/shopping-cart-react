@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Footer } from "./components/Footer.jsx";
 import { Header } from "./components/Header";
 import { Products } from "./components/Products";
+import { IS_DEVELOPMENT } from "./config.js";
 import { products as initialProducts } from "./mock/products.json";
 
 function useFilters() {
@@ -18,18 +20,19 @@ function useFilters() {
     });
   };
 
-  return { filterProducts, setFilters };
+  return { filters, filterProducts, setFilters };
 }
 
 function App() {
   const [products] = useState(initialProducts);
-  const { filterProducts, setFilters } = useFilters();
+  const { filters, filterProducts, setFilters } = useFilters();
   const filteredProducts = filterProducts(products);
 
   return (
     <>
       <Header changeFilters={setFilters} />
       <Products products={filteredProducts} />
+      {IS_DEVELOPMENT && <Footer filters={filters} />}
     </>
   );
 }
