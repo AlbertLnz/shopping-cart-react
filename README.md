@@ -1,6 +1,6 @@
 # Description of the project
 
-This project is a comprehensive implementation of an e-commerce store and shopping cart built using React. It incorporates state management at a global level, making use of the useContext API for global state distribution and utilizes the useReducer hook for efficient state management. The project demonstrates how to handle the application's state, allowing users to browse and select products from the store, add them to a cart, and update their cart items, all while maintaining a synchronized global state. It serves as an instructive example of React's powerful state management capabilities
+This project is a comprehensive implementation of an e-commerce store and shopping cart built using React. It incorporates state management at a global level, making use of the useContext for global state distribution and utilizes the useReducer hook for efficient state management. The project demonstrates how to handle the application's state, that allow the user to browse and select products from the store, add them to a cart, and update their cart items, all while maintaining a synchronized global state. It serves as an instructive example of React's powerful state management.
 
 # Deploy
 https://shopping-cart-react-albertlnz.netlify.app/
