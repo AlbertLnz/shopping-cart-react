@@ -6,7 +6,7 @@ export function Footer() {
   const { filters } = useFilters();
   const { cart } = useCart();
   return (
-    <footer className="footer">
+    <footer className="footer" hidden>
       {JSON.stringify(filters, null, 2)}
 
       {JSON.stringify(cart, null, 2)}
